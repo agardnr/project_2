@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;  
+    font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+a {
+ text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.img-responsive, #photo { 
+    
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#holder {
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
