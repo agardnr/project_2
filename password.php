@@ -13,8 +13,9 @@
 //implode array into string
 
 //import csv file
-
-
+echo "Incoming:";
+print_r($_POST);
+echo "<br>";
 
 // Number of characters picked by user. Replace with user input in phase 2
 $word_count = 5;
