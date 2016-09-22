@@ -1,28 +1,51 @@
-h1 {
-    text-align: center;  
-    font-family: "Courier New", Courier, monospace;
-}
-
 h2 {
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace !important;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-a {
- text-align: center;
-    font-family: "Courier New", Courier, monospace;
+
+.form-group {
+    padding: 15px;
+    font-family: "Courier New", Courier, monospace !important;
+
 }
 
-.img-responsive, #photo { 
-    
+.submit {
+
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 15px;
+    margin-top: 45px;
 }
 
-#holder {
- display: block;
-    margin-left: auto;
-    margin-right: auto;
+#submit {
+    background-color: #F5F5F5;
+    font-family: "Courier New", Courier, monospace !important;
+    font-weight: 600;
+}
+
+.pw_output {
+    background-color: #E6E6FA;
+    margin-top: 60px;
+    float: right;
+    padding: 15px;
+    width: 100%;
+
+}
+
+.pw {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace !important;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+#symbol {
+    font-weight: 600;
+}
+
+.checkbox {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace !important;
 }

@@ -12,6 +12,9 @@
 //shuffle array
 //implode array into string
 
+//import csv file
+
+
 
 // Number of characters picked by user. Replace with user input in phase 2
 $word_count = 5;
@@ -19,10 +22,13 @@ $number_count = 5;
 $symbol_opt = 'yes';
 $symbol_count = 4;
 
-// Array of words, numbers, and symbols
-$words = array('apple','orange','peach','plum','cat','dog','horse','tree','butterfly');
+// Arrays of words, numbers, and symbols
 $numbers = array(0,1,2,3,4,5,6,7,8,9);
 $symbols = array('@','#','$','%','*');
+
+// Word list from csv
+$file = fopen("words.csv","r");
+$words=fgetcsv($file);
 
 // Select random words, numbers, and symbols from array
 $rand_words = array_rand($words, $word_count);
