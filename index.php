@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
+ini_set('display_errors', 1); # Display errors on page (instead of a log file)
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +25,10 @@
     <link href="p1.css" rel="stylesheet" type="text/css">
     <title>Password Generator</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <?php require 'validate.php'; ?>
-    <?php require 'password.php'; ?>
+    <?php //require 'validate.php';
+          require 'password.php';
+    ?>
+
 </head>
 <body>
     <div class="container-fluid">
@@ -33,19 +40,19 @@
                     <div class="form-group">
                         <label class="control-label col-xs-10" for=
                         "word_count">How many words would you like?<br>
-                        (maximum is 20)</label>
+                        (Minimum: 2, Maximum: 9)</label>
                         <div class="col-sm-2">
                             <input class="form-control" id="word_count" max=
-                            "20" min="1" type="text" name="word_count" pattern="[1-9]" required="">
+                            "9" min="2" type="text" name="word_count" pattern="[2-9]" required="">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-xs-10" for=
                         "number_count">How many numbers would you like?<br>
-                        (maximum is 20)</label>
+                        (Minimum: 2, Maximum: 9)</label>
                         <div class="col-sm-2">
                             <input class="form-control" id="number_count" max=
-                            "20" min="1" name="number_count" type="text" pattern="[1-9]" required="">
+                            "9" min="2" name="number_count" type="text" pattern="[2-9]" required="">
                         </div>
                     </div>
                     <div class="checkbox">
@@ -58,11 +65,16 @@
                         "submit">Create my password</button>
                     </div>
                         <?php if(isset($error)): ?>
-                            <div class='error'><?php echo $error; ?></div>
+                            <div class='error'><?php echo $error;
+
+                            ?></div>
+
                         <?php endif ?>
                 </form>
                 <div class="pw_output">
-                    <p class="pw">password goes here</p>
+                    <p class="pw">
+                        <?php echo $password?>
+                    </p>
                 </div>
             </div>
             <div class="col-md-4"></div>

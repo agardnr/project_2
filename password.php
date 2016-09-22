@@ -1,27 +1,74 @@
 <?php
-//$password = "test";
+error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
+ini_set('display_errors', 1); # Display errors on page (instead of a log file)
+?>
 
-//array of words
-//array of numbers
-//array of symbols
+<?php
 
-//grab randomly from each array
-    //-use array_rand($array_name, num_words)
-//add to array
-//insert symbols and/or numbers into array
-//shuffle array
-//implode array into string
+$submission = $_POST;
+foreach($submission as $value) {
+}
 
-//import csv file
-echo "Incoming:";
-print_r($_POST);
-echo "<br>";
+$word_count= '';
+$number_count= '';
+$password= "";
 
-// Number of characters picked by user. Replace with user input in phase 2
-$word_count = 5;
-$number_count = 5;
-$symbol_opt = 'yes';
+// Validation
+if(!ctype_digit($_POST['word_count'])) {
+	$error = "The value must be a number.";
+	$word_count = 0;
+	$number_count = 0;
+	return;
+	}
+
+if(!ctype_digit($_POST['number_count'])) {
+  	$error = "The value must be a number.";
+  	$word_count = 0;
+  	$number_count = 0;
+  	return;
+  	}
+  echo $word_count;
+if($_POST['word_count'] < 2) {
+    $error= "*word_count*Value must be 2 or greater.";
+    $word_count = 0;
+    $number_count = 0;
+    return;
+    }
+
+if($_POST['number_count'] < 2) {
+    $error= "*number_count*Value must be 2 or greater.";
+    $word_count = 0;
+    $number_count = 0;
+    return;
+    }
+
+if($_POST['word_count'] > 9) {
+    $error= "Value must not exceed 9 characters.";
+    $word_count = 0;
+    $number_count = 0;
+    return;
+    }
+
+if($_POST['number_count'] > 9) {
+    $error= "Value must not exceed 9 characters.";
+    $word_count = 0;
+    $number_count = 0;
+    return;
+    }
+
+
+// Number of characters picked by user
+$word_count = $_POST['word_count'];
+$number_count = $_POST['number_count'];
 $symbol_count = 4;
+
+if (isset($_POST['symbol_opt'])) {
+$symbol_opt = $_POST['symbol_opt'];
+} else {
+  $symbol_opt = "";
+}
+
+
 
 // Arrays of words, numbers, and symbols
 $numbers = array(0,1,2,3,4,5,6,7,8,9);
@@ -38,7 +85,7 @@ $rand_symbols = array_rand($symbols, $symbol_count);
 
 // Array push to append selected to words $list array
 $list = array();
-for ($i=0; $i<$word_count; $i++){
+for ($i=0; $i < $word_count; $i++){
 array_push($list, $words[$rand_words[$i]]);
 }
 
@@ -62,7 +109,6 @@ $password = implode("",$list);
 
 echo 'Password:';
 print_r($password);
-
 
 
 
