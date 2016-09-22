@@ -1,15 +1,15 @@
-**Amanda's Portfolio:** Project 1
+**Password Generator:** Project 2
 
-**Live URL:** [Link to Amanda's Portfolio](http://www.p1.amanda-gardner.org/)
+**Live URL:** [Link to Amanda's Portfolio](http://www.p2.amanda-gardner.org/)
 
 **Description:**
-Portfolio to display course projects.
+Password generator using web scraping to CSV file for word list.
 
-**Screencast demo:** [Link to Demo](http://screencast.com/t/V6volRkUb)
+**Screencast demo:** [Link to Demo](http://screencast.com/t/MDtkLWXrr)
 
-**Details for TA:** Please use the following link if my live url does not work:  [Alternative Live URL](http://www.amanda-gardner.dreamhosters.com/dwa/p1/index.php)
+**Details for TA:** Please use the following link if my live url does not work:  [Alternative Live URL](http://www.amanda-gardner.dreamhosters.com/dwa/p2/index.php)
 
-I am getting a dns error when accessing my original link and am talking with dreamhost about correcting the problem.
+(My website seems to be working now, but just in case.)
 
 
 **Outside Code:**
