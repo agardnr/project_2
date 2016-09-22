@@ -6,14 +6,15 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 <?php
 
 $submission = $_POST;
-foreach($submission as $value) {
-}
 
 $word_count= '';
+//$word_count= $_POST['word_count'];
 $number_count= '';
-$password= "";
+$password= '';
 
 // Validation
+/*
+
 if(!ctype_digit($_POST['word_count'])) {
 	$error = "The value must be a number.";
 	$word_count = 0;
@@ -27,7 +28,8 @@ if(!ctype_digit($_POST['number_count'])) {
   	$number_count = 0;
   	return;
   	}
-  echo $word_count;
+
+
 if($_POST['word_count'] < 2) {
     $error= "*word_count*Value must be 2 or greater.";
     $word_count = 0;
@@ -55,7 +57,7 @@ if($_POST['number_count'] > 9) {
     $number_count = 0;
     return;
     }
-
+*/
 
 // Number of characters picked by user
 $word_count = $_POST['word_count'];
@@ -106,10 +108,5 @@ shuffle($list);
 
 // Implode array
 $password = implode("",$list);
-
-echo 'Password:';
-print_r($password);
-
-
 
  ?>

@@ -26,7 +26,8 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
     <title>Password Generator</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <?php //require 'validate.php';
-          require 'password.php';
+
+    //      require 'test.php';
     ?>
 
 </head>
@@ -63,6 +64,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
                     <div class="submit">
                         <button class="btn btn-default" id="submit" type=
                         "submit">Create my password</button>
+                        <?php require 'password.php'; ?>
                     </div>
                         <?php if(isset($error)): ?>
                             <div class='error'><?php echo $error;
