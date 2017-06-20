@@ -1,18 +1,15 @@
-**Password Generator:** Project 2
-
-**Live URL:** [Link to Amanda's Portfolio](http://www.p2.amanda-gardner.org/)
+**Password Generator**
+Assignment for CSCI E-15 Dynamic Web Applications, Harvard Extension School
+[Assignment Details from Syllabus](https://github.com/susanBuck/dwa15-archive/blob/master/2016-Spring/site/05_Projects/06_P2.md)
 
 **Description:**
-Password generator using web scraping to CSV file for word list.
+Password generator: 
+This project generates a word list by scraping an online list to a CSV file. A password is generated from the word list with options for how many words to include, optional numbers, and special symbols.
 
 **Screencast demo:** [Link to Demo](http://screencast.com/t/MDtkLWXrr)
-
-**Details for TA:** Please use the following link if my live url does not work:  [Alternative Live URL](http://www.amanda-gardner.dreamhosters.com/dwa/p2/index.php)
-
-(My website seems to be working now, but just in case.)
-
 
 **Outside Code:**
 
 * [Bootstrap](http://getbootstrap.com/)
 * [preg_match_all: Used this code to help grab content between list tags](http://stackoverflow.com/questions/1586779/preg-match-text-in-php-between-html-tags)
+* [Online word list used for web scraper] (http://www.paulnoll.com/Books/Clear-English/)
